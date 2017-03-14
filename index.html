@@ -3,18 +3,64 @@
 <head>
   <meta charset="utf-8">
   <title>V97ugのサンプルページ</title>
+  <style>
+  #clock{
+    font-family:"Courier New";
+    background-clor:#CCCCCC;
+    border:solid #999999 1px;
+    color:#000000;
+    width:300px;
+    padding:10px;
+  }
+  #time{
+    font-size:42pt;
+  }
+  #date{
+    font-size:20pt;
+  }
+  </style>
   <script>
   function showSlider(){
     var sliderValue = document.getElementById("slider").value;
     alert("スライダーの値:" + sliderValue);
   }
+
+  function clock(){
+    var now = new Date();
+
+    var hour = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+
+    if (hour < 10) hour = "0" + hour;
+    if (min < 10) min = "0" + min
+    if (sec < 10) sec = "0" + sec
+
+    var timeElement = document.getElementById("time");
+    timeElement.innerHTML = hour + ":" + min + ":" + sec;
+
+    var year = now.getFullYear();
+    var month = now.getMonth() + 1;
+    var day = now.getDate();
+    var weekArray = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+    var week = weekArray[now.getDay()];
+    var dateElement = document.getElementById("date");
+    dateElement.innerHTML = year + "/" + month + "/" + day + " " + week;
+
+    setTimeout("clock()",1000);
+  }
   </script>
 </head>
-<body>
+<body onLoad="clock()">
+  <div id="clock">
+    <div id="date">----/--/-- ---</div>
+    <div id="time">--:--:--</div>
+  </div>
+  <br>
   <form>
-    <input type="range" id="slider" value="50" min="0" max="100">
+    <input type="range" id="slider" value="500" min="0" max="1000">
     <br>
-    <input type="button" value="表示" onClick="showSlider()">
+    <input type="button" value="表示できるぞ（はあと）" onClick="showSlider()">
   </form>
 </body>
 </html>
