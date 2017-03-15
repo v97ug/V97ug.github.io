@@ -3,36 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>V97ugのサンプルページ</title>
-  <style>
-  #clock{
-    font-family:"Courier New";
-    background-clor:#CCCCCC;
-    border:solid #999999 1px;
-    color:#000000;
-    width:300px;
-    padding:10px;
-  }
-  #time{
-    font-size:42pt;
-  }
-  #date{
-    font-size:20pt;
-  }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <script src='main.js'></script>
 </head>
-<body onLoad="clock()">
-  <div id="clock">
-    <div id="date">----/--/-- ---</div>
-    <div id="time">--:--:--</div>
-  </div>
-  <br>
+<body>
   <form>
-    <input type="range" id="slider" value="500" min="0" max="1000">
-    <br>
-    <input type="button" value="トゲデマルからプレゼントをもらう" onClick="showSlider()">
+    <input type="button" value="トゲデマルからプレゼントをもらう" onClick="showTogeMessage()" style="height:50px">
   </form>
-
-  <img src="トゲデマル.png">
+  <img src="img/トゲデマル-背景なし-small.png">
 </body>
 </html>
