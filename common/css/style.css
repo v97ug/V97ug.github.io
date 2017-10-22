@@ -1,0 +1,93 @@
+@import "normalize.css";
+@import url(https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css);
+
+body {
+    color: #333333;
+    margin: 20px;
+    font-family: 'Rounded Mplus 1c', serif;
+    background-image: url("../img/pattern-green-small.jpg");
+    background-repeat: repeat-x;
+}
+
+rt {
+    font-size: 13px;
+
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+#page-header #site-title {
+    margin-bottom: 0;
+}
+
+#page-header #catchcopy {
+    margin-top: 10px;
+}
+
+#page-header #global-navi {
+    border: solid #CCCCCC;
+    border-width: 2px 0;
+    padding: 10px 0;
+}
+
+#page-header #global-navi ul li {
+    list-style: none;
+    width: 240px;
+    float: left;
+    padding: 0 10px;
+    border-left: solid 2px #CCCCCC;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#page-header #global-navi ul li:first-child {
+    border-left: none;
+}
+
+#page-header #global-navi ul {
+    margin: 0;
+    padding: 0;
+}
+
+#page-header #global-navi ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#page-header #global-navi ul li a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+#page-header #global-navi ul li a:hover,
+#page-header #global-navi ul li.current a {
+    background-color: #e9eb75;
+}
+
+#page {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.heading-typeA {
+    font-size: 23px;
+    color: #349FA6;
+    border-bottom: solid 1px #349FA6;
+    padding: 5px;
+}
+
+#page-foot {
+    border-top: solid 1px #CCCCCC;
+    margin-top: 15px;
+}
+
+#page-foot #copyright {
+    font-size: 17px;
+    line-height: 1.5;
+}

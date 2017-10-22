@@ -1,0 +1,14 @@
+section ul li {
+    margin: 30px 0;
+    list-style: none;
+    border: dashed 5px #CBDA10;
+}
+
+section ul li a {
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+section ul li a:hover {
+    background-color: #e9eb75;
+}

@@ -1,0 +1,12 @@
+body {
+    background-image: url(img/pine.png);
+}
+
+figure {
+    padding: 0;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}

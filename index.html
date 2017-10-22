@@ -1,15 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>V97ugのサンプルページ</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <title>たけちゃんのホームページ</title>
+
+    <meta name="description" content="たけちゃんが作ったホームページです。">
+    <link rel="stylesheet" href="common/css/style.css">
 </head>
+
 <body>
-  <form>
-    <input type="button" value="トゲデマルからプレゼントをもらう" onClick="showTogeMessage()" style="height:50px">
-  </form>
-  <img src="img/トゲデマル-背景なし-small.png">
+
+<div id="page">
+    <header id="page-header">
+        <h1 id="site-title">takechan's homepage</h1>
+        <p id="catchcopy">ワクワクを追い求めて</p>
+
+        <nav id="global-navi">
+            <ul>
+                <li class="current">
+                    <a href="index.html">
+                        <ruby>
+                            <rb>ホーム</rb>
+                            <rp>（</rp>
+                            <rt>home</rt>
+                            <rp>）</rp>
+                        </ruby>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/want/want.html">
+                        <ruby>
+                            <rb>ほしいもの</rb>
+                            <rp>（</rp>
+                            <rt>want</rt>
+                            <rp>）</rp>
+                        </ruby>
+                    </a>
+                </li>
+                <li><a href="pages/sns/sns.html">
+                    <ruby>
+                        <rb>SNSなど</rb>
+                        <rp>（</rp>
+                        <rt>SNS</rt>
+                        <rp>）</rp>
+                    </ruby>
+                </a></li>
+                <li>
+                    <a href="pages/contact/contact.html">
+                        <ruby>
+                            <rb>お問い合わせ</rb>
+                            <rp>（</rp>
+                            <rt>contacts</rt>
+                            <rp>）</rp>
+                        </ruby>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <figure>
+        <img src="img/couple.jpg" alt="" width="720" height="390">
+    </figure>
+
+    <section>
+        <h2 class="heading-typeA">たけちゃんのホームページへようこそ</h2>
+        <p>たけちゃんです。</p>
+        <p>ホームページを作ったので見てってね。</p>
+    </section>
+
+    <section>
+        <h2 class="heading-typeA">自己紹介</h2>
+        <p>今はwebデザイナーを目指して勉強中です。</p>
+        <p>みんなから、たけちゃんと呼ばれています。</p>
+        <p>よくいやし系と言われます。</p>
+    </section>
+
+    <section>
+        <h2 class="heading-typeA">何ができるの？</h2>
+        <p>プログラミングを専攻しているので、ruby、Java、Scala、Haskellなどの言語を使えます。</p>
+        <p>最近はweb系を勉強しているので、HTML、CSS、Javascriptなどを使いますね。</p>
+        <p>うまくプログラミングとデザインができるようになりたいな。</p>
+    </section>
+
+    <section>
+        <h2 class="heading-typeA">何が好き？</h2>
+        <p>プログラミングで、ちょこちょこ作るのが好きです。簡単なシステムとか。あとは、プログラムを構造化したり抽象化するのも好きです。</p>
+        <p>プログラミングの他に、音楽も好きです。最近はピアノを弾くのにはまっています。アニソンを弾くことが多いかな。</p>
+        <p>アニメを見るのも好きです。</p>
+    </section>
+
+    <footer id="page-foot">
+        <p id="copyright">
+            <small>Copyright&copy; 2017 @takechan All Rights Reserved.</small>
+        </p>
+    </footer>
+</div>
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59eb11131fce785e"></script>
 </body>
 </html>
